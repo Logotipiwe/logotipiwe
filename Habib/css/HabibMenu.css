@@ -1,0 +1,86 @@
+menu {
+    margin: 0;
+    padding: 0;
+    float: left;
+
+    border-left: 4px #ffc356 solid;
+}
+
+.categoryList {
+    margin: 0;
+    padding: 0;
+
+    width: 220px;
+}
+.categorylist li:hover{
+    color: orange;
+    cursor: pointer;
+}
+.categoryList > li {
+    padding: 13px 0 0 10px;
+
+    height: 32px;
+    width: auto;
+
+    font-size: 16px;
+    list-style-type: none;
+    background-color: rgb(232, 232, 232);
+    border: lightgray 0.5px solid;
+}
+
+.categoryList > li:hover {
+    background-color: white;
+    border-right: none;
+}
+
+.categoryList a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.sub-wrap {
+    position: absolute;
+    margin: -46px 0 0 220px;
+    padding: 30px;
+    display: none;
+
+    max-width: 670px;
+
+    border: 0.5px solid lightgray;
+    border-left: none;
+    background-color: white;
+}
+
+.categoryList li:hover + .sub-wrap,
+.sub-wrap:hover {
+    display: block;
+}
+
+.list-1 {
+    padding: 0;
+
+    font-size: 13px;
+    font-family: sans-serif;
+    list-style-type: none;
+}
+
+.list-1 li:not(.li1) {
+    margin: 0 0 15px 0;
+    padding: 0px 0 0 20px;
+
+    width: 47%;
+}
+
+.list-1 .li1 {
+    margin: 0 0 10px 0;
+    padding: 0;
+
+    width: 100%;
+    font-size: 19px;
+}
+.list-1 li:nth-child(-n+4){
+    float: left;
+}
+.list-1 li:nth-child(n+5){
+    float: right;
+}

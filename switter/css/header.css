@@ -1,0 +1,19 @@
+header{
+    width: 100%;
+    background-color: rgb(106, 106, 106);
+    color:rgb(165, 165, 165);
+    height: 60px;
+}
+header b {
+    font-size: 46px;
+    margin: 0 1380px 0 0;
+}
+header >* {
+    margin: 13px 0 0 0;
+    float: left;
+    
+    font-size: 24px;
+}
+header a {
+    color: inherit;
+}

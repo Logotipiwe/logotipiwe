@@ -1,0 +1,47 @@
+.item {
+    float: left;
+    margin: 0 23px 20px 0;
+    padding: 0 15px 10px 15px;
+    
+    width: 252px;
+    height: 400px;
+    
+    background-color: white;
+    transition: .2s linear;
+}
+.item:hover {
+    box-shadow: 0 0 10px gray;
+}
+.item > img {
+    width: 200px;
+    margin: 0 0 0 26px
+}
+.item > .ItemName {
+    margin: 9px 0 2px 0;
+    
+    font-size: 18px;
+    height: 42px;
+}
+.item > .ItemPrice {
+    margin: 0;
+    
+    font-size: 30px;
+    font-weight: bolder;
+}
+.item > .ItemPrice::after {
+    content: "р"
+}
+.buybutt form *{
+    margin: 30px 0 0 0;
+    padding: 0 10px 0 10px;
+    
+    height: 40px;
+    border-radius: 5px;
+}
+.buybutt form :not(:first-child){
+    margin-left: 20px;
+    background-color: rgb(255, 147, 0);
+}
+.item > .ItemCount {
+    margin: 23px 0 0 0;
+}

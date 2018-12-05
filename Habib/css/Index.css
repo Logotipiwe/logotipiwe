@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(234, 234, 234);
+}
+main {
+    margin: auto;
+
+    width: 1200px;
+    height: auto;
+    min-height: 800px;
+    /*потом убрать*/
+}
+.goods {
+    height: auto;
+}

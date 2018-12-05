@@ -1,0 +1,51 @@
+body {
+    background-color: rgb(234, 234, 234);
+}
+main {
+    margin: auto;
+
+    width: 1200px;
+    height: auto;
+    min-height: 800px;
+    /*потом убрать*/
+}
+.folders {
+    height: 40px;
+}
+.name {
+    height: 41px;
+    padding-top: 8px;
+    padding-left: 40px;
+    
+    font-size: 29px;
+}
+.name span {
+    font-size: 20px;
+    color: gray;
+}
+
+.select{
+    float: left;
+    height: 1000px;
+    width: 250px;
+    border: 0.5px solid; 
+}
+.List{
+    float: left;
+    padding: 0 10px 0 10px;
+    
+    height: 1000px;
+    width: 929px;
+}
+.List hr {
+    padding: 0;
+    margin: 0 0 5px 0;
+}
+.sort {
+    margin: 0 0 5px 0;
+}
+.items {
+    margin: 20px 0 0 0;
+    padding: 0 0 0 12px;
+    overflow: hidden;
+}
