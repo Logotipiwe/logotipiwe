@@ -20,14 +20,15 @@
 
             <?php
                 if($_COOKIE['login'] != ''){
-                    echo '<div class="Divtitle">Чтобы войти, надо сначала выйти :)</div><a href="php/PHPlogout.php"><input type="button" value="Выйти" style="margin-top:50px; cursor:pointer"></a>';
+                    echo '<div class="Divtitle">Чтобы войти, надо сначала выйти :)</div>
+                          <a href="php/PHPlogout.php"><input type="button" value="Выйти" style="margin-top:50px; cursor:pointer"></a>';
                 } else {
                     echo '<div class="Divtitle">Войти</div>
-            <form method="post" action="php/PHPsignin.php">
-                    <input name="InLogin" class="login" type="text" placeholder="Логин" autofocus>
-                    <input name="InPassword" class="password" type="text" placeholder="Пароль">
-                    <input class="submit" type="submit" value="Войти">
-            </form>';
+    <form method="post" action="php/PHPsignin.php">
+        <input name="InLogin" class="login" type="text" placeholder="Логин" autofocus>
+        <input name="InPassword" class="password" type="text" placeholder="Пароль">
+        <input class="submit" type="submit" value="Войти">
+    </form>';
                 }
             ?>
         </div>
@@ -39,6 +40,6 @@
                     <input class="submit" type="submit" value="Зарегистрироваться">
             </form>
         </div>
-        <script src="http://logotipiwe/Jquery.js"></script>
+        <script src="Jquery.js"></script>
     </body>
 </html>
