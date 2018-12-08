@@ -10,7 +10,7 @@
     <img class="FonImg" src="css/img/FonProz35.png">
     <header>
         <div class="to_index">
-            <a href="Index.php">На главную</a>
+            <a href="index.php">На главную</a>
         </div>
         <div class="log_in">
             <?php

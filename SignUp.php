@@ -7,7 +7,7 @@
     
     <body>
         <div class="head">
-            <div class='link'><a href="Index.php">На главную</a></div>
+            <div class='link'><a href="index.php">На главную</a></div>
             <div class="log_in">
                 <?php
                 if($_COOKIE['login']!=''){

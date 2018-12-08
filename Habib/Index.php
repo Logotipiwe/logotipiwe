@@ -24,8 +24,7 @@
             require_once("parts/menu.php");
         ?>
         <div class="main">
-            <div class="ads">
-            </div>
+            <div class="shitfuck"></div>
             <b>Наши самые дорогущие товары</b>
             <div class="goods">
                 <?php

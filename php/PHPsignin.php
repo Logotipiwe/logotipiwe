@@ -10,7 +10,7 @@ if($_POST['InLogin']!="") {
 
     if($row['Password'] == $_POST['InPassword']) {
         setcookie('login',$row['Login'],0,'/','',0);
-        header('location:../Index.php');
+        header('location:../index.php');
     } else {back();}
 
 } else {
