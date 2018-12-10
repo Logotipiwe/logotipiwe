@@ -1,3 +1,9 @@
+logotipiwe/index.php
+/
+index.php
+/index.php
+index
+
 <?php
 
 function ItemCount($name){

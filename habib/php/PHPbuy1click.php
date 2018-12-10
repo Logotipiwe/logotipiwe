@@ -10,5 +10,5 @@ if($row['count'] > 0){
 } else {
     $id = -1;
 }
-header('Location: ../Buy1click.php?id='.$id.'');
+header('Location: ../buy1click.php?id='.$id.'');
 ?>

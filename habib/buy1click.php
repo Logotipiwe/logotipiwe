@@ -29,7 +29,7 @@ require_once('php/PHPfunctions.php');
             <br>
             <br>
             <br>
-            <a href="Index.php">Продолжить покупки!</a>
+            <a href="index.php">Продолжить покупки!</a>
         </div>
     </main>
 

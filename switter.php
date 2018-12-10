@@ -38,7 +38,7 @@
         <div id='CPost' class="containerPost">
         </div>
         <div class="menuLine">
-                <a href="SignUp.php">
+                <a href="signup.php">
                     <?php
                     if($_COOKIE['login']=='') {
                         echo "<div class='menu'>Вход/регистрация</div>";

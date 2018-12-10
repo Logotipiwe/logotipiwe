@@ -1,6 +1,6 @@
 <?php
 function back(){
-    header("location:../SignUp.php");
+    header("location:../signup.php");
 }
 if($_POST['InLogin']!="") {
     $sql = new mysqli("localhost","root", "pi", "logotipiwe");

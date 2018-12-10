@@ -1,9 +1,9 @@
 <header>
         <div class="upInfo">
             <?php
-                if($_COOKIE['login'] != '') echo "<div class='log_in'>Вы вошли как ".$_COOKIE['login']." | <a href='../php/PHPlogout.php'> Выйти</a></div>"; else echo "<div class='log_in'><a href='../SignUp.php'>Войти</a></div>";
+                if($_COOKIE['login'] != '') echo "<div class='log_in'>Вы вошли как ".$_COOKIE['login']." | <a href='../php/PHPlogout.php'> Выйти</a></div>"; else echo "<div class='log_in'><a href='../signup.php'>Войти</a></div>";
                 ?>
-            <a href="../Index.php"><input type="button" value="На главную"></a>
+            <a href="../index.php"><input type="button" value="На главную"></a>
             <p>(работаем пока включен сервер)</p>
             <p>8-800-555-35-35</p>
             <div class="loc">
