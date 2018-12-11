@@ -1,7 +1,8 @@
 <header>
         <div class="upInfo">
             <?php
-                if($_COOKIE['login'] != '') echo "<div class='log_in'>Вы вошли как ".$_COOKIE['login']." | <a href='../php/PHPlogout.php'> Выйти</a></div>"; else echo "<div class='log_in'><a href='../signup.php'>Войти</a></div>";
+                if($_COOKIE['login'] != '') echo "<div class='log_in'>Вы вошли как ".$_COOKIE['login']." | <a href='../php/PHPlogout.php'> Выйти</a></div>";
+                else echo "<div class='log_in'><a href='../../signup.php'>Войти</a></div>";
                 ?>
             <a href="../index.php"><input type="button" value="На главную"></a>
             <p>(работаем пока включен сервер)</p>
@@ -12,8 +13,8 @@
             </div>
         </div>
         <div class="upSearch">
-            <a href="http://logotipiwe/Habib/index.php"><b>HabibExp</b></a>
-            <form action="catalog.php" id='searchForm' method="get">
+            <a href="../index.php"><b>HabibExp</b></a>
+            <form action="../catalog.php" id='searchForm' method="get">
                 <input type="text" id="typeQuery" name="typeQuery">
             </form>
             <div class="search">
@@ -22,6 +23,6 @@
                     <img src="../css/img/search.png" height="25px" width="25px">
                 </div>
             </div>
-            <a href="Cart.php"><button>Корзина</button></a>
+            <a href="../cart.php"><button>Корзина</button></a>
         </div>
     </header>

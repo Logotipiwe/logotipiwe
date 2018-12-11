@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="css/HabibMenu.css">
     </head>
     <body>
-        <?phprequire_once('parts/Head.php')?>
+        <?php require_once('parts/head.php')?>
             
         <script src="../Jquery.js"></script>
     </body>

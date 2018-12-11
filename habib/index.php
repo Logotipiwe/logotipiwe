@@ -1,7 +1,5 @@
 <?php
     require_once('php/PHPfunctions.php');
-    setcookie('cok1[1]',12);
-    setcookie('cok1[2]',245);
 ?>
 <html>
 
@@ -17,7 +15,7 @@
 
 <body>
     <?php
-        require_once("parts/Head.php");
+        require_once("parts/head.php");
     ?>
     <main>
         <?php
@@ -28,23 +26,25 @@
             <b>Наши самые дорогущие товары</b>
             <div class="goods">
                 <?php
-                    $res = SQLquery("SELECT * FROM `goods` ORDER BY `price` DESC LIMIT 0,9");            
+                    $res = SQLquery("SELECT * FROM goods ORDER BY `price` DESC LIMIT 0,9");
                     while(($row = $res -> fetch_assoc()) != false){
-                        echo "Вы все пидоры";
-                        echo "<div class='item' id='".$row['id']."'>
-                    <img src='css/img/goods/".$row['picture'].".png'>
-                    <p class='ItemName'>".$row['name']."</p>
-                    <p class='ItemPrice'>".$row['price']. "</p>
-                    <div class='buybutt'>
-                        <form method='POST' action='php/PHPbuy1click.php'>
-                            <input type='button' name='buy1click' value='Купить в 1 клик'>
-                            <input type='hidden' name='BuyId' value='" .$row['id']."'>
-                            <input type='button' value='В корзину'>
-                        </form>
-                    </div>
-                    <p class='ItemCount'>В наличии: ".$row['count']."</p>
-                    
-                </div>";
+                        if($row['count']>0){
+                            $count = "В наличии: ".$row['count'];
+                            $dis = "";
+                        } else{$count = "Нет в наличии"; $dis = " disabled";}
+                        echo "<div class='item' id='" .$row['id']. "'>
+                        <img src='css/img/goods/" .$row['picture']. ".png'>
+                        <p class='ItemName'>" .$row['name']. "</p>
+                        <p class='ItemPrice'>" .$row['price']. "</p>
+                        <div class='buybutt'>
+                            <form method='POST' action='php/PHPbuy1click.php'>
+                                <input".$dis." type='button' value='В корзину'>
+                                <input type='hidden' name='BuyId' value='" .$row['id']. "'>
+                                <input".$dis." type='button' name='buy1click' value='Купить в 1 клик'>
+                            </form>
+                        </div>
+                        <p class='ItemCount'>".$count."</p>
+                        </div>";
                     }
                 ?>
             </div>

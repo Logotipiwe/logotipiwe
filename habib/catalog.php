@@ -8,7 +8,7 @@ if($typeQ == 1){$SQLquery =
 "SELECT * FROM `goods`
 LEFT JOIN `category`
 ON  `goods`.`category` =  `category`.`id`
-WHERE `title` = '".$query."'";}
+WHERE title = '".$query."'";}
 
 if($typeQ == 0){$SQLquery =
 "SELECT * FROM `goods`
@@ -30,14 +30,13 @@ $res = $sql->query ($SQLquery);
     </head>
 
     <body>
-        <?phprequire_once("parts/Head.php");?>
+        <?php require_once("parts/head.php");?>
         <main>
             <div class="folders"></div>
             <div class="name">
                 <?php
                 if($typeQ == 1){echo $query." <span>".mysqli_num_rows($res)." товаров</span>";}
                 if($typeQ == 0){echo "Поиск: ''".$query."'' <span>".mysqli_num_rows($res)." товаров</span>";}
-//                echo "Ноуты<span>100 ddddddтоваров</spaan>";
                 ?>
             </div>
             <div class="CatalogMain">
@@ -58,7 +57,7 @@ $res = $sql->query ($SQLquery);
                         SELECT * FROM `goods`
                         LEFT JOIN `category`
                         ON  `goods`.`category` =  `category`.`id`
-                        WHERE `title` = '".$query."'";}
+                        WHERE title = '".$query."'";}
                                                 
                         if($typeQ == 0){$SQLquery = "
                         SELECT * FROM `goods`

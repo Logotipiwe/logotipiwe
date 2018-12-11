@@ -1,8 +1,4 @@
-<?php
-require_once('php/PHPfunctions.php');
-?>
 <html>
-
 <head>
     <title>Habib</title>
     <meta charset="utf-8">
@@ -14,21 +10,20 @@ require_once('php/PHPfunctions.php');
 </head>
 
 <body>
-    <?phprequire_once("parts/Head.php");?>
+    <?php require("parts/head.php");?>
     <main>
-        <?phprequire_once("parts/menu.php");?>
+        <?php require("parts/menu.php");?>
         <div class="main">
+            <div class="shitfuck"></div>
             <?php
             if($_GET['id'] == -1){
                 echo "К сожалению такого товара больше не осталость :(";
             } else {
                 echo "Покупка товара проведена успешно. Товар оплачен оформлением кредита на Вас в банке под 34% годовых. Товар будет доставлен к вам, где бы вы ни были, в течение пяти лет. Благодарим Вас за использование нашего магазина :)";
             }
-            
+
             ?>
-            <br>
-            <br>
-            <br>
+            <br><br><br>
             <a href="index.php">Продолжить покупки!</a>
         </div>
     </main>

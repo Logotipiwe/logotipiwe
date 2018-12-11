@@ -1,9 +1,3 @@
-logotipiwe/index.php
-/
-index.php
-/index.php
-index
-
 <?php
 
 function ItemCount($name){
@@ -12,10 +6,10 @@ function ItemCount($name){
     $res = $sql->query("
     SELECT * FROM `goods`
     LEFT JOIN `category`
-    ON `goods`.`category` = `category`.`id`
-    WHERE `title` = '".$name."'");
+    ON goods.category = category.id
+    WHERE category.name = '".$name."'");
 
-    echo "<span>".$name."</span>"." ".mysqli_num_rows($res)."</span>";
+    echo "<span>".$name." ".mysqli_num_rows($res)."</span>";
 }
 
 ?>
